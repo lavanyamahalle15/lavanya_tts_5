@@ -5,14 +5,14 @@ This guide provides a comprehensive, step-by-step process for setting up, develo
 ---
 DOWNLOAD ZIP FILE OR ELSE CONE PROJECT:
 
-VIA SSH:  git clone git@github.com:lavanyamahalle15/lavanya_tts4.git
-VIA HTTPS:  git clone https://github.com/lavanyamahalle15/lavanya_tts4.git
+VIA SSH:  git clone git@github.com:lavanyamahalle15/lavanya_tts_5.git
+VIA HTTPS:  git clone https://github.com/lavanyamahalle15/lavanya_tts_5.git
 
 To **download a ZIP file of your GitHub repository**, follow these steps:
 
 1. **Go to your repository page**  
    Open this link in your browser:  
-   (https://github.com/lavanyamahalle15/lavanya_tts4)
+   (https://github.com/lavanyamahalle15/lavanya_tts_5)
 
 2. **Click the green “Code” button**  
    It’s near the top right, above the list of files.
@@ -70,10 +70,10 @@ pip install numpy scipy PyYAML indic-num2words nltk indic-unified-parser pandas 
 
 ### 3.1. Clone the Repository
 ```bash
-git clone [https://github.com/lavanyamahalle14/lavanya_tts.git]
+git clone [https://github.com/lavanyamahalle14/lavanya_tts_5.git]
 cd lavanya_tts3
 
-after clonning repository u have to download model file manually from https://github.com/lavanyamahalle14/lavanya_tts/blob/main/Fastspeech2_HS/marathi/male/model/model.pth
+after clonning repository u have to download model file manually from https://github.com/lavanyamahalle15/lavanya_tts_5/blob/main/Fastspeech2_HS/marathi/male/model/model.pth
 as it has large size and place it in its desired location 
 ```
 
