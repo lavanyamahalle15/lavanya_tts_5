@@ -103,7 +103,7 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            padding: 1.5rem 0;
+            padding: 0.2rem 0;
         }
 
         .content-wrapper {
@@ -116,10 +116,10 @@
         .glass-card {
             background: rgba(255,255,255,0.85);
             backdrop-filter: blur(25px);
-            border-radius: 1.5rem;
-            border: 1px solid rgba(74,85,104,0.10); /* secondary accent border */
+            border-radius: 1.2rem;
+            border: 1px solid rgba(74,85,104,0.10);
             box-shadow: 0 8px 32px 0 rgba(44,62,80,0.10);
-            padding: 1.5rem 1rem 1rem 1rem;
+            padding: 0.8rem 0.8rem 0.6rem 0.8rem;
             position: relative;
             overflow: hidden;
             animation: cardFloat 6s ease-in-out infinite;
@@ -127,7 +127,7 @@
 
         @keyframes cardFloat {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
+            50% { transform: translateY(-10px); }
         }
 
         .glass-card::before {
@@ -150,11 +150,11 @@
         /* Header with Enhanced Typography */
         .header {
             text-align: center;
-            margin-bottom: 1.2rem;
+            margin-bottom: 0.5rem;
             background: rgba(255,255,255,0.85);
-            border-radius: 1.2rem;
+            border-radius: 1rem;
             box-shadow: 0 4px 24px rgba(44,62,80,0.10);
-            padding: 1rem 0.5rem 0.7rem 0.5rem;
+            padding: 0.5rem 0.4rem 0.3rem 0.4rem;
             position: relative;
             z-index: 5;
         }
@@ -164,28 +164,28 @@
             color: #2b6cb0;
             -webkit-text-fill-color: initial;
             text-shadow: 0 2px 8px rgba(44,62,80,0.10);
-            font-size: 2.2rem;
+            font-size: 1.6rem;
             font-weight: 700;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.3rem;
             position: relative;
         }
 
         .header h1 i {
             color: #667eea;
-            margin-right: 0.5rem;
+            margin-right: 0.4rem;
             filter: none;
         }
 
         .header .subtitle {
             color: #4a5568;
-            font-size: 1.1rem;
+            font-size: 0.85rem;
             font-weight: 500;
-            margin-bottom: 1rem;
+            margin-bottom: 0.3rem;
         }
 
         .header .tagline {
             color: #718096;
-            font-size: 1rem;
+            font-size: 0.75rem;
             font-style: italic;
             font-weight: 400;
         }
@@ -193,9 +193,9 @@
         /* Enhanced Form Styling */
         .form-section {
             background: rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            padding: 1rem;
-            margin-bottom: 1rem;
+            border-radius: 12px;
+            padding: 0.6rem;
+            margin-bottom: 0.6rem;
             border: 1px solid rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
         }
@@ -203,20 +203,20 @@
         .form-label {
             color: rgba(255, 255, 255, 0.95);
             font-weight: 600;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.3rem;
             display: flex;
             align-items: center;
-            gap: 0.6rem;
-            font-size: 0.95rem;
+            gap: 0.4rem;
+            font-size: 0.85rem;
         }
 
         .form-control, .form-select {
-            border-radius: 0.75rem;
+            border-radius: 0.6rem;
             border: 1px solid #e2e8f0;
-            padding: 14px;
-            font-size: 1.08rem;
+            padding: 0.6rem;
+            font-size: 0.9rem;
             background: #f7fafc;
-            color: #2d3748; /* body text */
+            color: #2d3748;
         }
 
         .form-control:focus, .form-select:focus {
@@ -224,23 +224,31 @@
             box-shadow: 0 0 0 2px #2b6cb033;
         }
 
+        /* Custom dropdown arrow */
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 16px 12px;
+        }
+
         /* Enhanced Range Slider */
         .form-range {
-            margin: 1rem 0;
+            margin: 0.5rem 0;
             background: transparent;
         }
 
         .form-range::-webkit-slider-track {
             background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            height: 8px;
+            border-radius: 8px;
+            height: 6px;
         }
 
         .form-range::-webkit-slider-thumb {
             background: linear-gradient(135deg, #667eea, #764ba2);
             border-radius: 50%;
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
 
@@ -248,27 +256,29 @@
             text-align: center;
             color: rgba(255, 255, 255, 0.9);
             font-weight: 700;
-            margin-top: 0.8rem;
+            margin-top: 0.3rem;
             background: rgba(255, 255, 255, 0.15);
-            padding: 0.5rem 1rem;
-            border-radius: 25px;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
             display: inline-block;
             backdrop-filter: blur(10px);
+            font-size: 0.8rem;
         }
 
         /* Enhanced Textarea */
         textarea.form-control {
             resize: vertical;
-            min-height: 140px;
+            min-height: 80px;
+            max-height: 100px;
             font-family: 'Inter', sans-serif;
         }
 
         /* Advanced Sample Text Section */
         .samples-section {
             background: rgba(255, 255, 255, 0.06);
-            border-radius: 16px;
-            padding: 0.7rem;
-            margin-top: 0.7rem;
+            border-radius: 12px;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
             border: 1px solid rgba(255, 255, 255, 0.12);
             backdrop-filter: blur(15px);
         }
@@ -277,20 +287,109 @@
             background: #edf2f7;
             border: 1px solid #e2e8f0;
             color: #2b6cb0;
-            padding: 0.7rem 1.5rem;
-            border-radius: 12px;
-            font-size: 0.9rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
             font-weight: 500;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             backdrop-filter: blur(10px);
+            margin-right: 0.4rem;
+            margin-bottom: 0.4rem;
         }
 
         .sample-btn:hover {
             background: #e2e8f0;
             color: #234e7d;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .sample-btn i {
+            margin-left: 0.2rem;
+            transition: transform 0.3s ease;
+            font-size: 0.7rem;
+        }
+
+        .sample-btn:hover i {
+            transform: translateY(1px);
+        }
+
+        /* Sample Dropdown Styles */
+        .sample-dropdown {
+            margin-top: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .sample-options {
+            padding: 0.5rem;
+        }
+
+        .sample-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem;
+            margin-bottom: 0.3rem;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .sample-option:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(3px);
+        }
+
+        .sample-option:last-child {
+            margin-bottom: 0;
+        }
+
+        .sample-text {
+            flex: 1;
+            color: #2d3748;
+            font-size: 0.8rem;
+            line-height: 1.3;
+            margin-right: 0.5rem;
+        }
+
+        .copy-btn {
+            background: #2b6cb0;
+            border: none;
+            color: white;
+            padding: 0.3rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .copy-btn:hover {
+            background: #234e7d;
+            transform: scale(1.05);
+        }
+
+        .copy-btn:active {
+            transform: scale(0.95);
         }
 
         /* Enhanced Primary Button */
@@ -298,15 +397,15 @@
             background: linear-gradient(135deg, #667eea, #764ba2);
             border: none;
             color: white;
-            padding: 1.2rem 2.5rem;
-            border-radius: 16px;
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             width: 100%;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
         }
 
         .btn-primary-custom::before {
@@ -325,8 +424,8 @@
         }
 
         .btn-primary-custom:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
         }
 
         .btn-primary-custom:disabled {
@@ -339,18 +438,18 @@
         .loading-container {
             display: none;
             text-align: center;
-            padding: 1.5rem;
+            padding: 0.8rem;
             color: rgba(255, 255, 255, 0.9);
         }
 
         .advanced-spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid rgba(255, 255, 255, 0.2);
-            border-top: 4px solid #667eea;
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-top: 3px solid #667eea;
             border-radius: 50%;
             animation: advancedSpin 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
-            margin: 0 auto 1.5rem;
+            margin: 0 auto 0.8rem;
         }
 
         @keyframes advancedSpin {
@@ -362,9 +461,9 @@
         /* Enhanced Audio Section */
         .audio-section {
             background: rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            padding: 1rem;
-            margin-top: 1rem;
+            border-radius: 12px;
+            padding: 0.6rem;
+            margin-top: 0.6rem;
             border: 1px solid rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(15px);
             display: none;
@@ -372,33 +471,34 @@
 
         .audio-section h5 {
             color: rgba(255, 255, 255, 0.95);
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.8rem;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
             font-weight: 600;
+            font-size: 0.9rem;
         }
 
         .audio-player {
             width: 100%;
-            margin-bottom: 1.5rem;
-            border-radius: 12px;
-            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+            margin-bottom: 0.8rem;
+            border-radius: 8px;
+            filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.15));
         }
 
         .btn-download {
             background: #2b6cb0;
             border: none;
             color: #fff;
-            padding: 1rem 2rem;
-            border-radius: 14px;
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
             width: 100%;
             font-weight: 600;
-            font-size: 1.08rem;
-            box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+            font-size: 0.9rem;
+            box-shadow: 0 3px 12px rgba(44,62,80,0.10);
             transition: background 0.2s, box-shadow 0.2s, color 0.2s;
             display: block;
-            margin-top: 0.5rem;
+            margin-top: 0.4rem;
             opacity: 1;
             visibility: visible;
         }
@@ -406,7 +506,7 @@
         .btn-download:hover, .btn-download:focus {
             background: #234e7d;
             color: #fff;
-            box-shadow: 0 8px 25px rgba(44,62,80,0.18);
+            box-shadow: 0 6px 20px rgba(44,62,80,0.18);
             outline: none;
         }
 
@@ -425,15 +525,33 @@
             }
             
             .main-container {
-                padding: 1rem;
+                padding: 0.1rem;
             }
             
             .glass-card {
-                padding: 2rem;
+                padding: 0.6rem 0.6rem 0.4rem 0.6rem;
             }
             
             .header h1 {
-                font-size: 2rem;
+                font-size: 1.4rem;
+            }
+            
+            .header .subtitle {
+                font-size: 0.8rem;
+            }
+            
+            .header .tagline {
+                font-size: 0.7rem;
+            }
+            
+            textarea.form-control {
+                min-height: 70px;
+                max-height: 85px;
+            }
+            
+            .sample-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.75rem;
             }
         }
 
@@ -445,6 +563,63 @@
             .content-wrapper {
                 max-width: 100%;
             }
+            
+            .glass-card {
+                padding: 0.5rem 0.4rem 0.3rem 0.4rem;
+            }
+            
+            .header h1 {
+                font-size: 1.3rem;
+            }
+            
+            .header .subtitle {
+                font-size: 0.75rem;
+            }
+            
+            .header .tagline {
+                font-size: 0.65rem;
+            }
+            
+            textarea.form-control {
+                min-height: 60px;
+                max-height: 75px;
+            }
+            
+            .sample-btn {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.7rem;
+                margin-right: 0.3rem;
+                margin-bottom: 0.3rem;
+            }
+        }
+
+        /* Ensure smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hide scrollbar but keep functionality */
+        .glass-card::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        .glass-card::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+        }
+
+        .glass-card::-webkit-scrollbar-thumb {
+            background: rgba(102, 126, 234, 0.3);
+            border-radius: 2px;
+        }
+
+        .glass-card::-webkit-scrollbar-thumb:hover {
+            background: rgba(102, 126, 234, 0.5);
+        }
+
+        /* Dropdown arrow animation */
+        .dropdown-arrow-rotated {
+            transform: rotate(180deg);
         }
     </style>
 </head>
@@ -464,7 +639,7 @@
 
     <!-- Left Background Content -->
     
-
+    <!-- Left Background Content -->
     <!-- Main Content -->
     <div class="main-container">
         <div class="content-wrapper">
@@ -488,6 +663,8 @@
                                     <option value="ekalipi">Ekalipi</option>
                                     <option value="marathi">Marathi</option>
                                     <option value="hindi">Hindi</option>
+                                    <option value="english">English</option>
+                                    <option value="mixed">English Marathi Mix</option>
                                     <option value="punjabi">Punjabi</option>
                                     <option value="tamil">Tamil</option>
                                     <option value="telugu">Telugu</option>
@@ -501,7 +678,6 @@
                                     <option value="bodo">Bodo</option>
                                     <option value="rajasthani">Rajasthani</option>
                                     <option value="urdu">Urdu</option>
-                                    <option value="english">English</option>
                                 </select>
                             </div>
                             <div class="col-md-6 mb-3">
@@ -528,7 +704,7 @@
                         <label for="text" class="form-label">
                             <i class="fas fa-keyboard"></i> Enter Text
                         </label>
-                        <textarea class="form-control" id="text" name="text" rows="5" 
+                        <textarea class="form-control" id="text" name="text" rows="4" 
                                 placeholder="Type or paste your text here..." required></textarea>
                         
                         <div class="samples-section">
@@ -537,8 +713,33 @@
                             </label>
                             <div class="sample-texts">
                                 <button type="button" class="sample-btn" onclick="loadSampleText()">
-                                    Load Sample Text
+                                    Load Sample Text <i class="fas fa-chevron-down"></i>
                                 </button>
+                                <button type="button" class="sample-btn" onclick="toggleSampleDropdown()">
+                                    Show Sample Text <i class="fas fa-chevron-down" id="dropdownArrow"></i>
+                                </button>
+                            </div>
+                            <div class="sample-dropdown" id="sampleDropdown" style="display: none;">
+                                <div class="sample-options">
+                                    <div class="sample-option" onclick="loadSampleText('sample1')">
+                                        <span class="sample-text" id="sample1Text"></span>
+                                        <button class="copy-btn" onclick="copyToClipboard('sample1')">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <div class="sample-option" onclick="loadSampleText('sample2')">
+                                        <span class="sample-text" id="sample2Text"></span>
+                                        <button class="copy-btn" onclick="copyToClipboard('sample2')">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <div class="sample-option" onclick="loadSampleText('sample3')">
+                                        <span class="sample-text" id="sample3Text"></span>
+                                        <button class="copy-btn" onclick="copyToClipboard('sample3')">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -564,7 +765,7 @@
                 </div>
             </div>
             <!-- Credit and Links Section -->
-            <div style="text-align:center; margin-top: 1.5rem; font-size: 1.02rem; color: #718096;">
+            <div style="text-align:center; margin-top: 1rem; font-size: 0.95rem; color: #718096;">
                 <span style="font-style: italic; letter-spacing: 0.5px;">~ Lavanya Mahalle</span>
                 &nbsp;|&nbsp;
                 <a href="https://www.linkedin.com/in/lavany-mahalle-66676128a/" target="_blank" style="color:#2b6cb0; text-decoration:underline; font-weight:500;">Linkedin</a>
@@ -578,41 +779,194 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Sample texts for each language
+        // Enhanced sample texts for each language
         const sampleTexts = {
-            ekalipi: "ceŋčwad cin omakār omkAr omakārācā omkArAcA",
-            marathi: "तुमचं खूप खूप अभिनंदन.",
-            hindi: "नमस्ते, मैं हिंदी में बोल रहा हूं।",
-            punjabi: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਮੈਂ ਪੰਜਾਬੀ ਵਿੱਚ ਬੋਲ ਰਿਹਾ ਹਾਂ।",
-            tamil: "வணக்கம், நான் தமிழில் பேசுகிறேன்.",
-            telugu: "నమస్కారం, నేను తెలుగులో మాట్లాడుతున్నాను.",
-            kannada: "ನಮಸ್ಕಾರ, ನಾನು ಕನ್ನಡದಲ್ಲಿ ಮಾತನಾಡುತ್ತಿದ್ದೇನೆ.",
-            malayalam: "നമസ്കാരം, ഞാൻ മലയാളത്തിൽ സംസാരിക്കുകയാണ്.",
-            gujarati: "નમસ્તે, હું ગુજરાતીમાં બોલી રહ્યો છું.",
-            bengali: "নমস্কার, আমি বাংলায় কথা বলছি।",
-            odia: "ନମସ୍କାର, ମୁଁ ଓଡ଼ିଆରେ କହୁଛି।",
-            assamese: "নমস্কাৰ, মই অসমীয়াত কথা কৈ আছোঁ।",
-            manipuri: "ꯍꯥꯌ, ꯑꯩ ꯃꯅꯤꯄꯨꯔꯤꯗ ꯋꯥ ꯍꯥꯌꯔꯤ।",
-            bodo: "नमस्कार, आं बड़ोआव बुङो।",
-            rajasthani: "खम्मा घणी, म्हैं राजस्थानी में बोल रियो हूं।",
-            urdu: "السلام علیکم، میں اردو میں بول رہا ہوں۔",
-            english: " I am speaking in English."
+            // Ekalipi Samples
+            ekalipi: {
+                sample1: "ceŋčwad cin omakār omkAr omakārācā omkArAcA",
+                sample2: "omakārālā omkArAlA meŧ‑rā mitrA kasλ kasE",
+                sample3: "meŧ‑rā mitrA ŧum‑hee tumhI kāy kAy aheŋsak ahiqsak"
+            },
+            
+            // Marathi Samples
+            marathi: {
+                sample1: "नमस्कार, मी मराठीत बोलत आहे. आजचा दिवस खूप सुंदर आहे.",
+                sample2: "तुमचं खूप खूप अभिनंदन. तुम्ही कसे आहात?",
+                sample3: "मी मराठी शिकत आहे. ही भाषा खूप सुंदर आहे."
+            },
+            
+            // Hindi Samples
+            hindi: {
+                sample1: "नमस्ते, मैं हिंदी में बोल रहा हूं। आज का दिन बहुत सुंदर है।",
+                sample2: "आपका बहुत बहुत अभिनंदन। आप कैसे हैं?",
+                sample3: "मैं हिंदी सीख रहा हूं। यह भाषा बहुत सुंदर है।"
+            },
+            
+            // English Samples
+            english: {
+                sample1: "I am speaking in English. Today is a beautiful day.",
+                sample2: "Thank you very much. How are you doing?",
+                sample3: "I am learning English. This language is very beautiful."
+            },
+            
+            // Mixed English-Marathi Samples
+            mixed: {
+                sample1: "Hello, मी आज खूप busy आहे. Can you help me? धन्यवाद!",
+                sample2: "Good morning! तुम्ही कसे आहात? I hope you are doing well.",
+                sample3: "Thank you for your help. मी खूप खुश आहे. Have a great day!"
+            },
+            
+            // Language-specific samples for other languages
+            punjabi: {
+                sample1: "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਮੈਂ ਪੰਜਾਬੀ ਵਿੱਚ ਬੋਲ ਰਿਹਾ ਹਾਂ।",
+                sample2: "ਤੁਹਾਡਾ ਬਹੁਤ ਬਹੁਤ ਧੰਨਵਾਦ। ਤੁਸੀਂ ਕਿਵੇਂ ਹੋ?",
+                sample3: "ਮੈਂ ਪੰਜਾਬੀ ਸਿੱਖ ਰਿਹਾ ਹਾਂ। ਇਹ ਭਾਸ਼ਾ ਬਹੁਤ ਸੁੰਦਰ ਹੈ।"
+            },
+            tamil: {
+                sample1: "வணக்கம், நான் தமிழில் பேசுகிறேன்.",
+                sample2: "நன்றி, நீங்கள் எப்படி இருக்கிறீர்கள்?",
+                sample3: "நான் தமிழ் கற்கிறேன். இந்த மொழி மிகவும் அழகானது."
+            },
+            telugu: {
+                sample1: "నమస్కారం, నేను తెలుగులో మాట్లాడుతున్నాను.",
+                sample2: "ధన్యవాదాలు, మీరు ఎలా ఉన్నారు?",
+                sample3: "నేను తెలుగు నేర్చుకుంటున్నాను. ఈ భాష చాలా అందంగా ఉంది."
+            },
+            kannada: {
+                sample1: "ನಮಸ್ಕಾರ, ನಾನು ಕನ್ನಡದಲ್ಲಿ ಮಾತನಾಡುತ್ತಿದ್ದೇನೆ.",
+                sample2: "ಧನ್ಯವಾದಗಳು, ನೀವು ಹೇಗೆ ಇದ್ದೀರಿ?",
+                sample3: "ನಾನು ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದೇನೆ. ಈ ಭಾಷೆ ತುಂಬಾ ಸುಂದರವಾಗಿದೆ."
+            },
+            malayalam: {
+                sample1: "നമസ്കാരം, ഞാൻ മലയാളത്തിൽ സംസാരിക്കുകയാണ്.",
+                sample2: "നന്ദി, നിങ്ങൾ എങ്ങനെ ഉണ്ട്?",
+                sample3: "ഞാൻ മലയാളം പഠിക്കുകയാണ്. ഈ ഭാഷ വളരെ മനോഹരമാണ്."
+            },
+            gujarati: {
+                sample1: "નમસ્તે, હું ગુજરાતીમાં બોલી રહ્યો છું.",
+                sample2: "ધન્યવાદ, તમે કેવી રીતે છો?",
+                sample3: "હું ગુજરાતી શીખી રહ્યો છું. આ ભાષા ખૂબ સુંદર છે."
+            },
+            bengali: {
+                sample1: "নমস্কার, আমি বাংলায় কথা বলছি।",
+                sample2: "ধন্যবাদ, আপনি কেমন আছেন?",
+                sample3: "আমি বাংলা শিখছি। এই ভাষা খুব সুন্দর।"
+            },
+            odia: {
+                sample1: "ନମସ୍କାର, ମୁଁ ଓଡ଼ିଆରେ କହୁଛି।",
+                sample2: "ଧନ୍ୟବାଦ, ଆପଣ କିପରି ଅଛନ୍ତି?",
+                sample3: "ମୁଁ ଓଡ଼ିଆ ଶିକ୍ଷା କରୁଛି। ଏହି ଭାଷା ବହୁତ ସୁନ୍ଦର।"
+            },
+            assamese: {
+                sample1: "নমস্কাৰ, মই অসমীয়াত কথা কৈ আছোঁ।",
+                sample2: "ধন্যবাদ, আপুনি কেনেকৈ আছে?",
+                sample3: "মই অসমীয়া শিকি আছোঁ। এই ভাষা বহুত সুন্দৰ।"
+            },
+            manipuri: {
+                sample1: "ꯍꯥꯌ, ꯑꯩ ꯃꯅꯤꯄꯨꯔꯤꯗ ꯋꯥ ꯍꯥꯌꯔꯤ।",
+                sample2: "ꯊꯥꯒꯠꯆꯔꯤ, ꯑꯗꯣꯝ ꯀꯔꯝꯕ ꯂꯩꯔꯤ?",
+                sample3: "ꯑꯩ ꯃꯅꯤꯄꯨꯔꯤ ꯇꯪꯕ ꯇꯧꯔꯤ। ꯑꯁꯤꯒꯤ ꯂꯣꯟ ꯑꯁꯤ ꯌꯥꯝꯅ ꯐꯖꯩ।"
+            },
+            bodo: {
+                sample1: "नमस्कार, आं बड़ोआव बुङो।",
+                sample2: "थाङखा, नों बेनि जाबाय?",
+                sample3: "आं बड़ो बिजाब सिखनो दं। बे बिजाबा खोबोर गोजोन।"
+            },
+            rajasthani: {
+                sample1: "खम्मा घणी, म्हैं राजस्थानी में बोल रियो हूं।",
+                sample2: "धन्नवाद, तूं कैसो है?",
+                sample3: "म्हैं राजस्थानी सिखणो लाग्यो हूं। ए भाषा खूब सुंदर है।"
+            },
+            urdu: {
+                sample1: "السلام علیکم، میں اردو میں بول رہا ہوں۔",
+                sample2: "شکریہ، آپ کیسے ہیں؟",
+                sample3: "میں اردو سیکھ رہا ہوں۔ یہ زبان بہت خوبصورت ہے۔"
+            }
         };
 
-        function loadSampleText() {
+        function loadSampleText(sampleType = null) {
             const currentLang = document.getElementById('language').value;
             const textArea = document.getElementById('text');
-            if (sampleTexts[currentLang]) {
-                textArea.value = sampleTexts[currentLang];
+            
+            if (sampleType) {
+                // Load specific sample from dropdown
+                const langSamples = sampleTexts[currentLang] || sampleTexts['english'];
+                if (langSamples && langSamples[sampleType]) {
+                    textArea.value = langSamples[sampleType];
+                }
+            } else {
+                // Load first sample for selected language
+                const langSamples = sampleTexts[currentLang] || sampleTexts['english'];
+                if (langSamples && langSamples.sample1) {
+                    textArea.value = langSamples.sample1;
+                }
             }
         }
+
+        function toggleSampleDropdown() {
+            const dropdown = document.getElementById('sampleDropdown');
+            const arrow = document.getElementById('dropdownArrow');
+            const currentLang = document.getElementById('language').value;
+            
+            if (dropdown.style.display === 'none') {
+                // Show dropdown and populate samples
+                const langSamples = sampleTexts[currentLang] || sampleTexts['english'];
+                
+                if (langSamples) {
+                    document.getElementById('sample1Text').textContent = langSamples.sample1 || 'Sample 1';
+                    document.getElementById('sample2Text').textContent = langSamples.sample2 || 'Sample 2';
+                    document.getElementById('sample3Text').textContent = langSamples.sample3 || 'Sample 3';
+                }
+                
+                dropdown.style.display = 'block';
+                arrow.classList.add('dropdown-arrow-rotated');
+            } else {
+                // Hide dropdown
+                dropdown.style.display = 'none';
+                arrow.classList.remove('dropdown-arrow-rotated');
+            }
+        }
+
+        function copyToClipboard(sampleType) {
+            const currentLang = document.getElementById('language').value;
+            const langSamples = sampleTexts[currentLang] || sampleTexts['english'];
+            const textToCopy = langSamples[sampleType];
+            
+            if (textToCopy) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    // Show feedback
+                    const copyBtn = event.target.closest('.copy-btn');
+                    const originalIcon = copyBtn.innerHTML;
+                    copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                    copyBtn.style.background = '#48bb78';
+                    
+                    setTimeout(() => {
+                        copyBtn.innerHTML = originalIcon;
+                        copyBtn.style.background = '#2b6cb0';
+                    }, 1000);
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                    alert('Failed to copy text to clipboard');
+                });
+            }
+        }
+
+        // Update samples when language changes
+        document.getElementById('language').addEventListener('change', function() {
+            const dropdown = document.getElementById('sampleDropdown');
+            if (dropdown.style.display !== 'none') {
+                // Refresh dropdown content if it's open
+                toggleSampleDropdown();
+                toggleSampleDropdown();
+            }
+        });
 
         // Update alpha value display
         document.getElementById('alpha').addEventListener('input', function(e) {
             document.getElementById('alphaValue').textContent = e.target.value + 'x';
         });
 
-        // Form submission
+        // Handle form submission - map mixed language to Marathi for processing
         document.getElementById('ttsForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
@@ -621,6 +975,12 @@
             document.getElementById('audioContainer').style.display = 'none';
             
             const formData = new FormData(this);
+            
+            // If mixed language is selected, use Marathi for processing
+            const selectedLang = document.getElementById('language').value;
+            if (selectedLang === 'mixed') {
+                formData.set('language', 'marathi'); // Use Marathi model for mixed text
+            }
             
             try {
                 const controller = new AbortController();
